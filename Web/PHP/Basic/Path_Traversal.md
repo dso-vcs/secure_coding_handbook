@@ -3,6 +3,7 @@
 <hr>
 
 ## Code lỗi
+***VD1: Path traversal thông qua upload file***
 
 ```php
 public function uploadPhoto(): bool
@@ -13,7 +14,16 @@ public function uploadPhoto(): bool
 
 Đoạn code trên không thực hiện kiểm tra tên file đầu vào
 
-## Code an toàn
+***VD2: Path traversal file include***
+
+```php
+    $template = $_COOKIE['TEMPLATE'];
+    include ( "/home/users/phpguru/templates/" . $template );
+```
+
+## Safe code
+
+**Option 1:**
 
 Sử dụng hàm `basename()` lấy tên file cuối cùng trong đường dẫn. VD: **`basename("/etc/passwd") = "passwd"`**
 
@@ -37,3 +47,6 @@ public function uploadPhoto(string $hashKey, Request $request): bool
     }
 ```
 
+**Option 2:**
+
+Sử dụng hàm `realpath()` 

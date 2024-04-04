@@ -10,7 +10,7 @@ $query = self::$database->exec('DELETE FROM reports WHERE id='. $reportID .' AND
 
 Đoạn code trên sử dụng nối chuỗi trong câu truy vấn và không kiểm tra đầu vào của người dùng dẫn đến lỗ hổng.
 
-## Code an toàn
+## Safe code
 
 **Sử dụng prepared statements**
 
