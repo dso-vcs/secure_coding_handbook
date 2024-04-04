@@ -4,14 +4,23 @@
 
 ## Code lỗi
 
+***VD1:***
 ```php
-public function uploadPhoto(): bool
-    {
-        return User::addPhoto($_FILES['file']['name']);
-    }
+    public function uploadPhoto(): bool
+        {
+            return User::addPhoto($_FILES['file']['name']);
+        }
 ```
 
-Đoạn code trên không thực hiện kiểm tra tên file đầu vào
+Đoạn code trên không thực hiện kiểm tra tên file đầu vào, kẻ tấn công có thể chèn các ký tự `../` vào tên file để thay đổi vị trí lưu trữ của file.
+
+***VD2:***
+```php
+    $template = $_COOKIE['TEMPLATE'];
+    include ( "/home/users/phpguru/templates/" . $template );
+```
+
+Đoạn code thực hiện nối chuỗi để lấy đường dẫn của file.
 
 ## Code an toàn
 
