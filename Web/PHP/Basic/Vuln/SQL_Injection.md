@@ -2,7 +2,7 @@
 
 <hr>
 
-## Code lỗi
+## Noncompliant code
 
 ```php
 $query = self::$database->exec('DELETE FROM reports WHERE id='. $reportID .' AND user_uid='. $user->uid);
@@ -10,7 +10,7 @@ $query = self::$database->exec('DELETE FROM reports WHERE id='. $reportID .' AND
 
 Đoạn code trên sử dụng nối chuỗi trong câu truy vấn và không kiểm tra đầu vào của người dùng dẫn đến lỗ hổng.
 
-## Safe code
+## Compliant code
 
 **Sử dụng prepared statements**
 

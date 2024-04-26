@@ -2,7 +2,7 @@
 
 <hr>
 
-## Code lỗi
+## Noncompliant code
 
 ```php
 function runEmployeeQuery($dbName, $name){
@@ -19,7 +19,7 @@ $employeeRecord = runEmployeeQuery('EmployeeDB',$_GET['EmployeeName']);
 
 Hàm `runEmployeeQuery()` trong đoạn code trên không kiểm tra quyền người dùng trước khi gọi. 
 
-## Safe code
+## Compliant code
 
 ```php
 function runEmployeeQuery($dbName, $name){

@@ -2,7 +2,7 @@
 
 <hr>
 
-## Code lỗi
+## Noncompliant code
 ***VD1: Path traversal thông qua upload file***
 
 ```php
@@ -21,7 +21,7 @@ public function uploadPhoto(): bool
     include ( "/home/users/phpguru/templates/" . $template );
 ```
 
-## Safe code
+## Compliant code
 
 **Option 1:**
 

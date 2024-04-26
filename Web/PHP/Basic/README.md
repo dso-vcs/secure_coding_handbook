@@ -4,6 +4,7 @@
 
 <details>
 <summary>Authentication</summary>
+<br>
 
 **Login**
 - [Improper Authentication](vuln/improper_authentication.md)
@@ -47,6 +48,7 @@ password in any way.
 
 <details>
 <summary>Validation, Sanitization and Encoding</summary>
+<br>
 
 **Input Validation**
 - Mass Assignment
@@ -116,7 +118,7 @@ password in any way.
 - LFI
 - RFI
 - OS Command Injection
-- SSRF
+- [SSRF](vuln/SSRF.md)
 </details>
 
 <br>
@@ -127,5 +129,5 @@ password in any way.
 - Improper Encoding or Escaping of Output
 - Use of GET Request Method With Sensitive Query Strings
 - Trusting HTTP Permission Methods on the Server Side
-- CSRF
+- [CSRF](vuln/csrf.md)
 </details>

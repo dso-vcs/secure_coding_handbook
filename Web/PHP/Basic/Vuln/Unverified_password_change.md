@@ -2,7 +2,7 @@
 
 <hr>
 
-## Unsafe code
+## Noncompliant code
 
 ```php
 $user = $_POST['user'];
@@ -15,7 +15,7 @@ SetUserPassword($user, $pass);
 
 Đoạn code trên không thực hiện kiểm tra password hiện tại mà trực tiếp cập nhật password mới
 
-## Safe code
+## Compliant code
 
 ```php
 $password = GetPassword();

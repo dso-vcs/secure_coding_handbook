@@ -2,9 +2,9 @@
 
 <hr>
 
-## Code lỗi
+## Noncompliant code
 
-***VD1: Lưu thông tin log nhạy cảm vào file error log có khả năng bị truy xuất bởi người dùng thường***
+***Eg: Lưu thông tin log nhạy cảm vào file error log có khả năng bị truy xuất bởi người dùng thường***
 
 ```php
 
@@ -19,10 +19,10 @@
     }
 ```
 
-Hàm `processUserInput()` ghi lại thông báo lỗi bao gồm dữ liệu nhập trực tiếp của người dùng vào nhật ký lỗi. Điều này có khả năng tiết lộ thông tin nhạy cảm cho bất kỳ ai có quyền truy cập vào tệp nhật ký lỗi, kể cả người dùng trái phép
+In this noncompliant code example, the function processUserInput() logs an error message that includes the user input directly into the error log. This can potentially expose sensitive information to anyone who has access to the error log file, including unauthorized users.
 
 
-## Safe code
+## Compliant code
 
 ```php
 
