@@ -14,8 +14,7 @@
 - [Unverified Password Change](vuln/unverified_password_change.md)
 
 **Forget Password**
-- Verify password credential recovery does not reveal the current 
-password in any way.
+- Verify password credential recovery does not reveal the current password in any way.
 
 </details>
 
