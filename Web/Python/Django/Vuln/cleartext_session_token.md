@@ -1,4 +1,4 @@
-# Vuln name
+# Cleartext Transmission of Session Token
 
 <hr>
 

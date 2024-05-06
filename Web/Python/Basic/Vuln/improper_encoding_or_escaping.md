@@ -1,4 +1,4 @@
-# Vuln name
+# Improper Encoding or Escaping of Output
 
 <hr>
 

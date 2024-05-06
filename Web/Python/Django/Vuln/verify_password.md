@@ -1,4 +1,4 @@
-# Vuln name
+# Verify password credential recovery reveals the current password
 
 <hr>
 

@@ -1,4 +1,4 @@
-# Vuln name
+# IDOR
 
 <hr>
 

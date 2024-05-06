@@ -1,4 +1,4 @@
-# Vuln name
+# Insufficient Session Expiration
 
 <hr>
 
