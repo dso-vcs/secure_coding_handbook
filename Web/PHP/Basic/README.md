@@ -110,7 +110,7 @@
 <details>
 <summary>Files Handling</summary>
 
-- Data Amplification
+- [Data Amplification](Vuln/data_amplification.md)
 - [Unrestricted Upload of File with Dangerous Type](Vuln/unrestricted_file_upload)
 - [Inclusion of Functionality from Untrusted Control Sphere](Vuln/inclusion_of_functionality_from_untrusted_control_sphere.md)
 - [Path Traversal](Vuln/path_traversal.md)
